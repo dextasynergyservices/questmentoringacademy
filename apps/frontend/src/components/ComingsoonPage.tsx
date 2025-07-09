@@ -1,4 +1,4 @@
-export default function ComingsoonPage({ title }: { title: string }) {
+export default function ComingSoonPage({ title }: { title: string }) {
   return (
     <div
       style={{
