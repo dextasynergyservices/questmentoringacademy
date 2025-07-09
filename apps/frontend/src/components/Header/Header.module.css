@@ -1,0 +1,249 @@
+/* MAIN HEADER CONTAINER */
+.header {
+  position: fixed;
+  top: 45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 90%;
+  height: 104px;
+  background: #ffffff;
+  z-index: 50;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.header.scrolled {
+  top: 15px;
+}
+
+/* .headerContent {
+  max-width: calc(100% - 279px);
+  height: 100%;
+  position: relative;
+}
+
+.headerContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 20px 49px rgba(0, 0, 0, 0.67);
+  z-index: -1;
+} */
+
+.header.scrolled .headerContent::before {
+  box-shadow: 0 20px 49px rgba(0, 0, 0, 0.17);
+}
+
+/* LOGO */
+.logoContainer {
+  display: inline-block;
+  padding-left: 76px;
+}
+
+.logo_m {
+  width: 100%;
+  height: 100px;
+}
+
+@media (max-width: 800px) {
+  .logo_m {
+    width: 100% !important;
+    height: 100%;
+  }
+}
+
+/* MAIN NAV */
+.mainNavContainer {
+  display: inline-block;
+  margin-left: auto;
+  padding-right: 93px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mainNavContainer.menuOpen {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+.mainNav {
+  margin-top: 7px;
+}
+
+.mainNavItem {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.mainNavItem:last-child {
+  margin-right: 0;
+}
+
+.mainNavLink {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  transition: color 200ms ease;
+}
+
+.mainNavLink:hover {
+  color: #081a42;
+}
+
+/* DROPDOWN BEHAVIOR */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdownMenu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* HEADER SIDE PHONE BAR */
+/* .headerSide {
+  width: 279px;
+  height: 100%;
+  background: #081a42;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.headerSide img {
+  width: 29px;
+  height: 29px;
+} */
+
+/* .headerSideText {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 12px;
+} */
+
+/* HAMBURGER */
+.hamburgerContainer {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: none;
+  cursor: pointer;
+}
+
+.hamburgerIcon {
+  font-size: 24px;
+  padding: 10px;
+  color: #3a3a3a;
+  transition: color 200ms ease;
+}
+
+.hamburgerContainer:hover .hamburgerIcon {
+  color: #ffb606;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .header {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .headerContent {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .headerContent::before {
+    content: none;
+    box-shadow: none;
+  }
+
+  .hamburgerContainer {
+    display: block;
+    z-index: 11;
+  }
+
+  .headerSide {
+    display: none;
+  }
+
+  .mainNavContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    transform: translateY(-200%);
+    opacity: 0;
+    padding: 0;
+    z-index: 10;
+  }
+
+  .mainNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 16px 0;
+    gap: 16px;
+  }
+
+  .mainNavItem {
+    display: block;
+    margin: 0;
+  }
+
+  .mainNavLink {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+}
+
+/* MOBILE MENU LINKS */
+.mobile_a {
+  font-size: 16px !important;
+}
+
+/* DROPDOWN MENU ITEMS */
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  margin-top: 0;
+  min-width: 180px;
+  z-index: 100;
+}
+
+.dropdownMenu.show {
+  display: block;
+}
+
+.dropdownItem {
+  padding: 8px 16px;
+  color: #3a3a3a;
+  font-size: 14px;
+}
+
+.dropdownItem:hover {
+  color: #081a42;
+}
