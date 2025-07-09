@@ -1,0 +1,162 @@
+/* Hero.module.css */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Swiper overrides */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperSlide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heroSlideBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.heroSlideContentWrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heroSlideContent {
+  max-width: 90%;
+  transform: translateY(30px);
+}
+
+.heroSlideContent h1 {
+  font-size: 1.5rem !important;
+  font-weight: 400;
+  color: #fff;
+}
+
+.heroSlideContent h1 span {
+  padding: 0 0.5rem;
+  margin: 0 -0.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .heroSlideContent h1 {
+    font-size: 4rem !important;
+  }
+}
+
+/* Navigation arrows */
+.swiperNavButton {
+  color: #081a42;
+  background: #fff;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 100;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.swiperNavButton:hover {
+  background: #081a42;
+  color: #fff;
+}
+
+.swiperNavButtonLeft {
+  left: 4%;
+}
+
+.swiperNavButtonRight {
+  right: 4%;
+}
+
+/* Hero Boxes */
+
+.heroBoxes {
+  width: 100%;
+  background: #1a1a1a;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 20;
+}
+
+.heroBoxesInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .heroBoxesInner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.heroBox {
+  background: #1a1a1a;
+  padding: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 1px solid #4e75ca;
+}
+
+.heroBox:hover {
+  background: #ffb606;
+  color: #1a1a1a;
+}
+
+.heroBoxContent {
+  text-align: center;
+}
+
+.heroBoxTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.heroBox p {
+  color: #a6a6a6;
+  line-height: 1.5;
+}
+
+.headerWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}

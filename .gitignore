@@ -76,6 +76,8 @@ web_modules/
 
 # Next.js build output
 .next
+.dist/
+.pnpm-store/
 out
 
 # Nuxt.js build / generate output
