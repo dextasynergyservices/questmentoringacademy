@@ -1,0 +1,190 @@
+/* ---------------------
+   1. Hero Section
+------------------------*/
+
+.home {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_background_container {
+  width: 100%;
+  height: 100%;
+}
+
+.home_background {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.home_content {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #081a42;
+  padding: 12px 32px;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Responsive: Hero */
+@media screen and (max-width: 768px) {
+  .home {
+    height: 50vh;
+  }
+
+  .home_content {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home_content {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+  }
+}
+
+/* ---------------------
+   2. Contact Section
+------------------------*/
+
+.contact {
+  padding-top: 40px;
+  padding-bottom: 117px;
+  margin-top: -10em;
+}
+
+.contact_wrapper {
+  display: flex;
+  gap: 30px;
+  padding: 0 60px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Responsive: Contact Wrapper */
+@media screen and (max-width: 992px) {
+  .contact_wrapper {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+}
+
+.contact_title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.contact_form_container {
+  margin-top: 40px;
+}
+
+.input_field {
+  width: 100%;
+  background: #f8f4f4;
+  border: solid 2px transparent;
+  margin-bottom: 24px;
+  height: 42px;
+  padding-left: 16px;
+  font-size: 14px;
+}
+
+.input_field:focus {
+  outline: none !important;
+  border-color: #081a42;
+}
+
+.text_field {
+  width: 100%;
+  height: 189px;
+  background: #f8f4f4;
+  border: solid 2px transparent;
+  padding: 16px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.text_field:focus {
+  outline: none !important;
+  border-color: #081a42;
+}
+
+.contact_send_btn {
+  width: 100%;
+  height: 48px;
+  background: #123456;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.contact_send_btn:hover {
+  background: #0d2c60;
+}
+
+.contact_send_btn:focus {
+  outline: solid 1px #081a42;
+  border: green ;
+}
+
+/* ---------------------
+   3. Contact Info
+------------------------*/
+
+.about_title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.about_text {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.contact_info {
+  margin-top: 64px;
+  padding-left: 16px;
+}
+
+.contact_info_item {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a5a5a5;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.contact_info_icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.contact_info_icon img {
+  width: 100%;
+}

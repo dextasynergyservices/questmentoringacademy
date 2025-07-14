@@ -1,5 +1,12 @@
-import ComingSoonPage from "@/components/ComingSoonPage";
+import Header from "@/components/Header/Header";
+import ContactHero from "@/components/ContactHero/ContactHero";
 
-export default function AboutPage() {
-  return <ComingSoonPage title="About Us" />;
+export default function ContactPage() {
+  return (
+    <>
+      <ContactHero>
+        <Header />
+      </ContactHero>
+    </>
+  );
 }
