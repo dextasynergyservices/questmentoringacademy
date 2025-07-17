@@ -97,7 +97,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className={styles.mainNavItem}>
-                <Link href="#" className={styles.mainNavLink}>
+                <Link href="/news" className={styles.mainNavLink}>
                   News
                 </Link>
               </li>
